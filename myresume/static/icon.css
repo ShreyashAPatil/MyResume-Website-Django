@@ -1,0 +1,120 @@
+
+/* New icon */
+
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 44%;
+	transform: translate(-50%, -50%);
+  }
+  
+  .iconline {
+	list-style: none;
+  }
+  
+  .iconline li {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	margin: 10px 0;
+	cursor: pointer;
+	border-radius: 30px;
+	/* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
+  }
+  
+  .iconline li .fa {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	color: #fff;
+  }
+  
+  .iconline li.facebook{
+	background: #3b64bb;
+  }
+  
+  .iconline li.linkedin{
+	background: #007aed;
+  }
+  
+  .iconline li.instagram{
+	background: #bc2a8d;
+  }
+  
+  .iconline li.whatsapp{
+	background: #4dc247;
+  }
+
+  .iconline li.github{
+	background: #1c1d1c;
+  }
+  
+  .iconline li.facebook div.slider{
+	background: #627aac;
+  }
+  
+  .iconline li.linkedin div.slider{
+	background: #5a9ecc;
+  }
+  
+  .iconline li.instagram div.slider{
+	background: #dd94c6;
+  }
+  
+  
+  .iconline li.whatsapp div.slider{
+	background: #82d47e;
+  }
+  .iconline li.github div.slider{
+	background: #343534;
+  }
+  
+  .slider {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 55px;
+	width: 0px;
+	height: 50px;
+	border-radius: 30px;
+	transition: all 0.5s 0.3s ease;
+  }
+  
+  .slider p {
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 900;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	opacity: 0;
+	transition: all 0.6s ease;
+  }
+  
+  .iconline li:hover .slider {
+	width: 180px;
+	transition: all 0.5s ease;
+  }
+  
+  .iconline li:hover .slider p {
+	opacity: 1;
+	transition: all 1s 0.2s ease;
+  }
+  
+  
+  
+
+
+
+
+
+  /* copyright text neon */
+
+ 
+  
+  
+  

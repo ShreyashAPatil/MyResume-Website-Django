@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <title>MyResume || Shreyash Patil</title>
+
+    <!--ICON-->
+    <link rel="shortcut icon" href="images/icon.ico">
+
+    <!--META TAGS-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Shreyash">
+    <meta name="description" content="A digital resume">
+    <meta name="keywords"
+        content="resume, my resume, Shreyash Patil, CV, digital resume, Shreyash resume, cool resume, digital cv">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="MyResume || Shreyash Patil" />
+
+    <!--PLUGIN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <!--EXTERNAL CSS-->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'icon.css' %}">
+
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=PT+Sans+Narrow&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=MonteCarlo&display=swap" rel="stylesheet">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+    <!--HEADER-->
+    <header>
+        <nav class="nav" id="nav">
+            <a id="nabar" href="#">ABOUT ME</a>
+            <a id="nabar" href="#Skills">SKILLS</a>
+            <a id="nabar" href="#MyWorks">MY WORKS</a>
+            <a id="nabar" href="#ContactMe">CONTACT ME</a>
+            <a id="nabar" href="{% static 'Shreyash.pdf' %}" class="active" download>DOWNLOAD CV <i class="fa fa-download"></i></a>
+            <a class="icon" id="icon" onclick="opennav()"><i class="fa fa-bars"></i></a>
+        </nav>
+    </header>
+
+
+
+    <!--CONTAINER-->
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <div class="author_content">
+                        <h1 class="title">Shreyash Patil</h1>
+                        <p>Hello there! Before talking about qualifications and professional abilities, I would like to
+                            introduce myself.</p>
+                        <p>I am <i><strong>Shreyash Patil</strong></i> and I am from India. Taking web development
+                            as a profession not only fulfils my pocket but also my heart because it has been my passion
+                            since my early teenage.</p>
+                        <p>I have done Diploma in Computer Engeenering. I've built a few projects by myself and
+                            i'm looking for a role where i can grow and learn from oter experienced team members.</p>
+                    </div>
+                    <div class="author_name"></div>
+                </td>
+                <td>
+                    <section class="works">
+                        <div>
+                            <em>Qualification:</em>
+                            <ul>
+                                <li>
+                                    <p> <span style="margin-left: -3rem; margin-right: 1rem;"> 2021 </span> PDEA's
+                                        Institute of Technology, Hadapsar, Pune<br>
+                                        <i>Secured 84.56%</i>
+                                       
+                                    </p>
+                                    <span style="margin-left: -3rem; margin-right: 1rem;"> 2018 </span> H.S.C from
+                                    S.M.Joshi Collage, Hadapsar, Pune<br>
+                                    <i>Secured 56.92%</i></p>
+
+                                    <p> <span style="margin-left: -3rem; margin-right: 1rem;"> 2016 </span> S.S.C from
+                                        ST.Oscar Convent High School,Keshav Nagar, Pune.
+                                        <br>
+                                        <i>Secured 60.00%</i>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <em>Hobbies:</em>
+                            <ul>
+                                <li>Playing Games, Travelling, Listening music, Trekking</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <em>Languages:</em>
+                            <ul>
+                                <li>English</li>
+                                <li>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-o checked"></span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Marathi</li>
+                                <li>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>Hindi</li>
+                                <li>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-o checked"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="social_icons">
+                        
+                        <a  class="colors" id="orange" data-color="#ff7519"></a>
+                        <a  class="colors" id="yellow" data-color="#ffcc00"></a>
+                        <a  class="colors" id="blue" data-color="#00ffff"></a>
+                        <a  class="colors" id="purple" data-color="#9933ff"></a>
+
+
+                    </div>
+                </td>
+            </tr>
+
+
+
+
+            <!--MY SKILLS-->
+            <tr id="Skills">
+                <td>
+                    <div class="author_content">
+                        <h1 class="title">My Skills</h1>
+                        <p>My education background and my passion towards coding allowed me to thrive in this career</p>
+                        <p>I aquired a quite good knowledge in <em id="pl">HTML5, CSS3, Bootstrap, Python, Django,
+                                REST-Framework</em> and intermediate level in
+                            <em id="pl"> MYSQL, PostgreSQL, Git & GitHub</em> and basic level in using <em id="pl">javascript, C,
+                                C++</em> and have working
+                            experience on <em id="pl">Windows</em> platform
+                        </p>
+                        <p>I always love to learn more things, and prefer to work in a team.</p>
+                        <strong>Thank You.</strong>
+                    </div>
+                </td>
+                <td>
+                    <section>
+                        <em>Web developer skills</em>
+                        <div class="languages">
+                            <label for="lan1">HTML/CSS/Bootstrap</label>
+                            <div id="lan1" class="progress">
+                                <div class="progress-value"></div>
+                            </div>
+                            <label for="lan4">Python</label>
+                            <div id="lan4" class="progress">
+                                <div class="progress-value progress2"></div>
+                            </div>
+                            <label for="lan5">Django(REST-Framework)</label>
+                            <div id="lan5" class="progress">
+                                <div class="progress-value "></div>
+                            </div>
+                            <label for="lan6">javascript</label>
+                            <div id="lan6" class="progress">
+                                <div class="progress-value progress3"></div>
+                            </div>
+                            <label for="lan6">MySQL(PostgreSQL)</label>
+                            <div id="lan6" class="progress">
+                                <div class="progress-value progress2"></div>
+                            </div>
+                            <label for="lan6">Git/GitHub</label>
+                            <div id="lan6" class="progress">
+                                <div class="progress-value "></div>
+                            </div>
+                        </div>
+    </div>
+    </section>
+    </td>
+    </tr>
+
+    <!--MY WORKS-->
+    <tr>
+        <td id="MyWorks">
+            <div class="reviews author_content">
+                <h1 class="title">Work Experience</h1>
+                <p>Jr. Python Developer, Maxgen Technologies Pvt.Ltd Pune <br>
+                    From Aug 2020 - present <br>
+                    Worked as Python Django developer.
+                    
+
+                <ul> <b style="letter-spacing: 2px;">My Responsibilities:</b>
+                    <li>Create Django Forms for database models</li>
+                    <li>Worked on backend and frontend features</li>
+                    <li>Used Django-crispy-forms to manage Django forms</li>
+                    <li>Used CRUD operations to create , read , update and delete items in Database</li>
+                    <li>Authentication & Authorization of user(Login module)</li>
+                    <li>and many more...</li>
+                </ul>
+                </p>
+            </div>
+        </td>
+        <td>
+            <h3 class="title" style="color: aliceblue; text-align: center; letter-spacing: 2px; margin-bottom: -20px;">My Projects</h3>
+            <div class="container-flex" style="padding: 25px;">
+                
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil/To-Do-List" target="main" title="Google"><img class="codepen" src="/static/1ToDo.png"
+                                alt=""></a>
+
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil/To-Do-List" target="main" title="Google"><img class="codepen" src="/static/ToDoList.png"
+                                alt=""></a>
+                        
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil/Django_Blog" target="main" title="Google"><img class="codepen" src="/static/1blog.png"
+                                alt=""></a>
+                        
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil/Django_Blog" target="main" title="Google"><img class="codepen" src="/static/2blog.png"
+                                alt=""></a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil/CityHospital" target="main" title="Google"><img class="codepen" src="/static/1hospital.png"
+                                alt=""></a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil/CityHospital" target="main" title="Google"><img class="codepen" src="/static/2hospital.png"
+                                alt=""></a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil" target="main" title="Google"><img class="codepen" src="/static/ecomm.png"
+                                alt=""></a>
+                    </div>
+                    <div class="mySlides fade">
+                        <a href="https://github.com/ShreyashAPatil" target="main" title="Google"><img class="codepen" src="/static/2ecomm.png"
+                                alt=""></a>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                </div>
+            </div>
+
+
+
+        </td>
+    </tr>
+
+
+
+
+
+    <!--CONTACT FORM-->
+    <tr id="ContactMe">
+        <td>
+            <div class="author_content">
+                <h1 class="title">Love to hear from you</h1>
+                <p>I always love to hear from you. You guys can reach me through my email address as a primary option or
+                    cotact me
+                    through my social media accounts .</p>
+            </div>
+            <footer id="pl">
+                Copyright © 2020-2021 ShreyashPatil.com
+            </footer>
+        </td>
+        <td>
+            <section>
+
+                <div class="wrapper">
+                    <ul class="iconline">
+                        <li class="facebook"><a href="https://www.facebook.com/shreyash.patil.96592836" target="main">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <div class="slider">
+                                <p>facebook</p>
+                            </div>
+                        </a>
+                        </li>
+
+                        <li class="linkedin"><a href="https://www.linkedin.com/in/shreyash-patil-a875b91b2" target="main">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            <div class="slider">
+                                <p>linkedin</p>
+                            </div>
+                        </a>
+                        </li>
+
+                        <li class="instagram"><a href="https://www.instagram.com/shreyash8248/" target="main">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <div class="slider">
+                                <p>instagram</p>
+                            </div>
+                        </a>
+                        </li>
+
+                        <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=+919130858424" target="main">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                            <div class="slider">
+                                <p>whatsapp</p>
+                            </div>
+                        </a>
+                        </li>
+                        <li class="github"><a href="https://github.com/ShreyashAPatil/" target="main">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <div class="slider">
+                                <p>GitHub</p>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </td>
+    </tr>
+    </table>
+    </div>
+
+
+
+    <div id="snackbar"></div>
+    <div id="snackbar2"></div>
+
+
+    <!--JAVASCRIPT-->
+    <script type="text/javascript" src="{% static 'custom.js' %}"></script>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+</body>
+
+</html>
